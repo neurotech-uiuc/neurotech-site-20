@@ -1,0 +1,57 @@
+{% extends 'main/main.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class = "container">
+  <div class = "row slider-text align-items-center justify-content-center">
+    <div class="col-lg-9 text-center col-sm-12 animate__animated animate__fadeIn">
+      <h1 class="mb-4">Our Members</h1>
+      <p>2020-2021</p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+
+  <div class = "container">
+    <div class = "row slider-text align-items-center justify-content-center">
+      <div class="col-lg-9 text-center col-sm-12 animate__animated animate__fadeIn animate__delay-1s">
+        <h3 class="mb-4">Leads</h3>
+      </div>
+
+    </div>
+    <div class = "row">
+      {% for i in leads %}
+      <div class="col-lg-4">
+        <div class="media d-block media-custom text-center portrait animate__animated animate__fadeIn animate__delay-1s">
+          <a href="#"><img src= "{{ i.profile_pic.url }}" style="border-radius: 50%;" class="img-fluid"></a>
+          <div class = "media-body">
+            <h3>{{i.name}}</h3>
+            {% if i.lead %}
+            <p style = "color:#4e9fff;"><b>Lead Position</b></p>
+            {% endif %}
+            <p>Major(s) : {{i.major}} <br> Minor(s) : {{i.minor}} <br> Year : {{i.year}}</p>
+            {% if i.linkedin %}
+            <a href="{{ i.linkedin }}" target="_blank"><img src="{% static 'images/linkedin.png' %}"></a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+{% endblock %}

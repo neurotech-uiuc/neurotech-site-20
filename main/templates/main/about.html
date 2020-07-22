@@ -1,0 +1,112 @@
+{% extends 'main/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class = "container">
+  <div class = "row slider-text align-items-center justify-content-center">
+    <div class="col-lg-9 text-center col-sm-12 animate__animated animate__fadeIn">
+      <h1 class="mb-4">Our Divisions</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis volutpat, hendrerit amet arcu pellentesque ullamcorper lorem nunc. Aenean malesuada sed nulla elementum. Mauris volutpat posuere pharetra, eros, bibendum. Quis nibh eget pharetra eleifend nec proin massa lobortis commodo. Id gravida sed sed dictumst. Tempor diam risus sit ac blandit. Pharetra non odio quis nulla scelerisque gravida ultricies.</p>
+    </div>
+    <br>
+  </div>
+
+  <div class = "container">
+    <div class = "row">
+
+      <div class="col-lg-3">
+        <div class="media d-block text-center portrait">
+          <a href="#sw"><img src="{% static 'images/filler_avatar.png' %}"  style="border-radius: 50%;"></a>
+          <div class = "media-body">
+            <p>Software</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="media d-block text-center portrait">
+          <a href="#hw"><img src="{% static 'images/filler_avatar.png' %}"  style="border-radius: 50%;"></a>
+          <div class = "media-body">
+            <p>Hardware</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="media d-block text-center portrait">
+          <a href="#re"><img src="{% static 'images/filler_avatar.png' %}"  style="border-radius: 50%;"></a>
+          <div class = "media-body">
+            <p>Research</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="media d-block text-center portrait">
+          <a href="#or"><img src="{% static 'images/filler_avatar.png' %}"  style="border-radius: 50%;"></a>
+          <div class = "media-body">
+            <p>Outreach</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+</div>
+
+<div class = "scrolling-box">
+<div class = "container" id = "sw">
+    <div class = "row">
+      <div class="col-lg-6">
+        <img src = "{% static 'images/new_face.png' %}" class="img-fluid">
+      </div>
+      <div class="col-lg-6 ml-auto">
+        <h2> Software </h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing blandit elementum tincidunt aliquam, praesent. In fermentum morbi montes, nec facilisi augue purus. Id et enim ipsum a, lectus lectus feugiat. Porttitor sit sit et ante. Tortor, odio eget at aliquam proin morbi. Ultrices placerat arcu felis sem nec non cursus malesuada pellentesque. Consequat aliquam eget mi at eros, tempor, at vivamus. In diam enim suspendisse nullam potenti sagittis nibh. Neque ultrices aliquam sit vivamus vitae sit mi neque. ` Integer pulvinar ut faucibus id nec. In congue mauris nunc, a elit. In fringilla sociis risus ut est a. Convallis at metus, mattis ac. Sed orci, velit lobortis consequat sapien mi sed sed eget.</p>
+      </div>
+    </div>
+</div>
+
+<div class = "container" id = "hw">
+    <div class = "row">
+      <div class="col-lg-6 ml-auto">
+        <h2> Hardware </h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing blandit elementum tincidunt aliquam, praesent. In fermentum morbi montes, nec facilisi augue purus. Id et enim ipsum a, lectus lectus feugiat. Porttitor sit sit et ante. Tortor, odio eget at aliquam proin morbi. Ultrices placerat arcu felis sem nec non cursus malesuada pellentesque. Consequat aliquam eget mi at eros, tempor, at vivamus. In diam enim suspendisse nullam potenti sagittis nibh. Neque ultrices aliquam sit vivamus vitae sit mi neque. ` Integer pulvinar ut faucibus id nec. In congue mauris nunc, a elit. In fringilla sociis risus ut est a. Convallis at metus, mattis ac. Sed orci, velit lobortis consequat sapien mi sed sed eget.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src = "{% static 'images/new_face.png' %}" class="img-fluid">
+      </div>
+    </div>
+</div>
+
+<div class = "container" id = "re">
+    <div class = "row">
+      <div class="col-lg-6">
+        <img src = "{% static 'images/new_face.png' %}" class="img-fluid">
+      </div>
+      <div class="col-lg-6 ml-auto">
+        <h2> Research </h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing blandit elementum tincidunt aliquam, praesent. In fermentum morbi montes, nec facilisi augue purus. Id et enim ipsum a, lectus lectus feugiat. Porttitor sit sit et ante. Tortor, odio eget at aliquam proin morbi. Ultrices placerat arcu felis sem nec non cursus malesuada pellentesque. Consequat aliquam eget mi at eros, tempor, at vivamus. In diam enim suspendisse nullam potenti sagittis nibh. Neque ultrices aliquam sit vivamus vitae sit mi neque. ` Integer pulvinar ut faucibus id nec. In congue mauris nunc, a elit. In fringilla sociis risus ut est a. Convallis at metus, mattis ac. Sed orci, velit lobortis consequat sapien mi sed sed eget.</p>
+      </div>
+    </div>
+</div>
+
+<div class = "container" id = "or">
+    <div class = "row">
+      <div class="col-lg-6 ml-auto">
+        <h2> Outreach </h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing blandit elementum tincidunt aliquam, praesent. In fermentum morbi montes, nec facilisi augue purus. Id et enim ipsum a, lectus lectus feugiat. Porttitor sit sit et ante. Tortor, odio eget at aliquam proin morbi. Ultrices placerat arcu felis sem nec non cursus malesuada pellentesque. Consequat aliquam eget mi at eros, tempor, at vivamus. In diam enim suspendisse nullam potenti sagittis nibh. Neque ultrices aliquam sit vivamus vitae sit mi neque. ` Integer pulvinar ut faucibus id nec. In congue mauris nunc, a elit. In fringilla sociis risus ut est a. Convallis at metus, mattis ac. Sed orci, velit lobortis consequat sapien mi sed sed eget.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src = "{% static 'images/new_face.png' %}" class="img-fluid">
+      </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}

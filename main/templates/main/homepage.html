@@ -1,0 +1,107 @@
+{% extends 'main/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class = "container" id="headtext">
+  <div class = "row slider-text align-items-left justify-content-left">
+    <div class="col-lg-6 text-left col-sm-12 animate__animated animate__fadeInUp">
+      <h1 class="mb-4">NeuroTechXUIUC</h1>
+      <p> We are an organization dedicated to fostering a community of people passionate about Neurotech. Our mission is to expose the field of Neurotech to everyone on campus. We strive to provide resources, host events, and offer professional development for our members.</p>
+    </div>
+  </div>
+</div>
+
+<div class = "container">
+  <div class = "row slider-text align-items-center justify-content-center">
+    <div class="col-lg-9 text-center col-sm-12 animate__animated animate__fadeIn animate__delay-2s">
+      <h2 class="mb-4">What we're up to</h2>
+      <p>Connect with us on <u><a href="https://www.linkedin.com/company/uiucneurotechx" target="_blank">LinkedIn</a></u>, <u><a href="https://www.facebook.com/NeuroTech-at-UIUC-122584179135432/" target="_blank">Facebook</a></u>, and <u><a href="https://www.instagram.com/neurotech.uiuc/" target="_blank">Instagram</a></u>.</p>
+      </div>
+  </div>
+  <br><br>
+
+</div>
+<hr>
+<div class = "container">
+
+  <div class = "row slider-text align-items-left justify-content-left">
+    <div class="col-lg-12 text-left col-sm-12">
+      <h3 class="mb-4">Recent Blogs</h3>
+
+    </div>
+  </div>
+
+
+		<div class="col-lg-12 text-left col-sm-12">
+			<div class="card text-left mb-3" id="round">
+        	<div class="card-body">
+			  		<h5 class="card-title">Title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Date</h6>
+
+			    	<p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis neque sapien ornare commodo. Et mi, quis elit rutrum at. Pulvinar erat lectus velit lacus eu placerat auctor lorem at. Ut sed suspendisse porttitor erat.</p>
+			  	</div>
+
+			</div>
+		</div>
+
+    <div class="col-lg-12 text-left col-sm-12">
+			<div class="card text-left mb-3" id="round">
+        	<div class="card-body">
+			  		<h5 class="card-title">Title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Date</h6>
+
+			    	<p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis neque sapien ornare commodo. Et mi, quis elit rutrum at. Pulvinar erat lectus velit lacus eu placerat auctor lorem at. Ut sed suspendisse porttitor erat.</p>
+			  	</div>
+
+			</div>
+		</div>
+
+    <div class="col-lg-12 text-left col-sm-12">
+			<div class="card text-left mb-3" id="round">
+        	<div class="card-body">
+			  		<h5 class="card-title">Title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Date</h6>
+
+			    	<p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis neque sapien ornare commodo. Et mi, quis elit rutrum at. Pulvinar erat lectus velit lacus eu placerat auctor lorem at. Ut sed suspendisse porttitor erat.</p>
+			  	</div>
+
+			</div>
+		</div>
+
+    <a class="btn btn-secondary" id = "btn1" href="{% url 'blog' %}">Read more</a>
+    <br><br>
+</div>
+<hr>
+<div class = "container">
+    <div class = "row">
+      <div class="col-lg-6">
+        <img src = "{% static 'images/new_face.png' %}" class="img-fluid">
+      </div>
+      <div class="col-lg-6 ml-auto">
+        <p>Member of the Week:</p>
+        <h2> FirstName LastName </h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing blandit elementum tincidunt aliquam, praesent. In fermentum morbi montes, nec facilisi augue purus. Id et enim ipsum a, lectus lectus feugiat. Porttitor sit sit et ante. Tortor, odio eget at aliquam proin morbi. Ultrices placerat arcu felis sem nec non cursus malesuada pellentesque. Consequat aliquam eget mi at eros, tempor, at vivamus. In diam enim suspendisse nullam potenti sagittis nibh. Neque ultrices aliquam sit vivamus vitae sit mi neque. ` Integer pulvinar ut faucibus id nec. In congue mauris nunc, a elit. In fringilla sociis risus ut est a. Convallis at metus, mattis ac. Sed orci, velit lobortis consequat sapien mi sed sed eget.</p>
+      </div>
+    </div>
+
+
+</div>
+
+<div id = "feed">
+  <div class = "row slider-text align-items-center justify-content-center">
+    <div class="col-lg-6 text-center col-sm-6">
+      <h2 class="mb-4">Instagram Feed</h2>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CCC10MrlF9y/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+      </blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+
+    </div>
+  </div>
+  <a class="btn btn-secondary btn-block" id="btn2" href="https://www.instagram.com/neurotech.uiuc/" target="_blank">More posts</a>
+</div>
+
+
+
+
+{% endblock %}

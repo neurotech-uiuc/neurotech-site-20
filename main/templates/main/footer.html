@@ -1,0 +1,49 @@
+<!-- Site footer -->
+{% load static %}
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-5">
+          <h3 class = "mb-4">NeurotechXUIUC</h3>
+          <p class="mb-5">We are an organization dedicated to fostering a community of people passionate about Neurotech. Our mission is to expose the field of Neurotech to everyone on campus. We strive to provide resources, host events, and offer professional development for our members.</p>
+        </div>
+
+        <div class="col-md-4">
+          <h3 class = "mb-4">Contact Info</h3>
+          <ul class="list-unstyled footer-links">
+            <h6>Social Media</h6>
+            <li class="d-block">
+            <a href="https://www.linkedin.com/company/uiucneurotechx" target="_blank"><img src="{% static 'images/linkedinLogo.png' %}"></a>
+            <a href="https://www.facebook.com/NeuroTech-at-UIUC-122584179135432/" target="_blank"><img src="{% static 'images/facebookLogo.png' %}"></a>
+            <a href="https://www.instagram.com/neurotech.uiuc/" target="_blank"><img src="{% static 'images/instagramLogo.png' %}"></a>
+            </li>
+            <li class= "d-block">
+            <h6>Email</h6>
+            <p class="mb-4">uiucneurotech@gmail.com</p>
+
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h3 class="mb-4">Links</h3>
+          <ul class="list-unstyled footer-links">
+            <li><a href="{% url 'about' %}">Divisions</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'members' %}">Our Members</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by UIUC.
+          </p>
+        </div>
+
+      </div>
+    </div>
+</footer>
